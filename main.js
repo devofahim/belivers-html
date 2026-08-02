@@ -5,6 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileNavClose = document.getElementById('mobileNavClose');
     const mobileSearchToggle = document.getElementById('mobileSearchToggle');
     const searchBar = document.getElementById('searchBar');
+    const stickyHeader = document.getElementById('stickyHeader');
+    const headerWrapper = document.querySelector('.header-wrapper');
+    const stickyMenuToggle = document.getElementById('stickyMenuToggle');
 
     function openMobileNav() {
         mainNav.classList.add('active');
@@ -20,6 +23,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (mobileMenuToggle) {
         mobileMenuToggle.addEventListener('click', openMobileNav);
+    }
+
+    if (stickyMenuToggle) {
+        stickyMenuToggle.addEventListener('click', openMobileNav);
     }
 
     if (mobileNavClose) {
@@ -43,6 +50,35 @@ document.addEventListener('DOMContentLoaded', function() {
             item.parentElement.classList.toggle('open');
         });
     });
+
+    // Sticky Header - show when scrolling up past header
+    if (stickyHeader && headerWrapper) {
+        let lastScrollY = window.scrollY;
+        let ticking = false;
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    const headerBottom = headerWrapper.offsetTop + headerWrapper.offsetHeight;
+                    const currentScrollY = window.scrollY;
+
+                    if (currentScrollY > headerBottom) {
+                        if (currentScrollY < lastScrollY) {
+                            stickyHeader.classList.add('show');
+                        } else {
+                            stickyHeader.classList.remove('show');
+                        }
+                    } else {
+                        stickyHeader.classList.remove('show');
+                    }
+
+                    lastScrollY = currentScrollY;
+                    ticking = false;
+                });
+                ticking = true;
+            }
+        });
+    }
 
     // Hero Swiper initialization
     const heroSwiper = document.querySelector('.hero-swiper');
