@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Believers - Your Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <a href="#" class="store-location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>STORE LOCATIONS</span>
+            </a>
+            <div class="settings-dropdown">
+                <button class="settings-btn">
+                    <span>Settings</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <ul class="settings-menu">
+                    <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                    <li><a href="#"><i class="fas fa-user-plus"></i> Register</a></li>
+                    <li><a href="#"><i class="fas fa-truck"></i> Track Order</a></li>
+                    <li><a href="#"><i class="fas fa-headset"></i> Help Center</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header + Nav Wrapper -->
+    <div class="header-wrapper">
+        <!-- Main Header -->
+        <header class="main-header">
+            <div class="header-container">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <button class="mobile-search-toggle" id="mobileSearchToggle">
+                    <i class="fas fa-search"></i>
+                </button>
+
+                <div class="logo">
+                    <a href="#">
+                        <img src="logo.png" alt="Believers Logo">
+                    </a>
+                </div>
+
+                <div class="search-bar" id="searchBar">
+                    <input type="text" placeholder="Search for Products...">
+                    <button class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+
+                <div class="header-right">
+                    <div class="user-account">
+                        <i class="far fa-user-circle"></i>
+                        <div class="account-text">
+                            <span class="sign-in">Sign In</span>
+                            <span class="your-account">Your Account</span>
+                        </div>
+                    </div>
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <nav class="desktop-nav">
+            <div class="desktop-nav-container">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Panjabi <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Regular Panjabi <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Cotton Panjabi</a></li>
+                                    <li><a href="#">Linen Panjabi</a></li>
+                                    <li><a href="#">Silk Panjabi</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#">Embroidered Panjabi <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Hand Embroidered</a></li>
+                                    <li><a href="#">Machine Embroidered</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Printed Panjabi</a></li>
+                            <li><a href="#">Premium Panjabi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Thobe <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Classic Thobe <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">White Thobe</a></li>
+                                    <li><a href="#">Black Thobe</a></li>
+                                    <li><a href="#">Navy Thobe</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Modern Thobe</a></li>
+                            <li><a href="#">Embroidered Thobe</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Shirt <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Formal Shirt <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Solid Color</a></li>
+                                    <li><a href="#">Striped</a></li>
+                                    <li><a href="#">Checked</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Casual Shirt</a></li>
+                            <li><a href="#">Printed Shirt</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">T-shirt <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Polo T-shirt</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Round Neck <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Plain</a></li>
+                                    <li><a href="#">Graphic</a></li>
+                                    <li><a href="#">Printed</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">V-Neck</a></li>
+                            <li><a href="#">Oversized</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Polo Shirt <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Classic Polo</a></li>
+                            <li><a href="#">Premium Polo</a></li>
+                            <li><a href="#">Striped Polo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Pant & Trouser <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Formal Trouser <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Slim Fit</a></li>
+                                    <li><a href="#">Regular Fit</a></li>
+                                    <li><a href="#">Classic Fit</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Chino Pant</a></li>
+                            <li><a href="#">Slim Fit</a></li>
+                            <li><a href="#">Regular Fit</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Women's Clothing <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Kurti <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Casual Kurti</a></li>
+                                    <li><a href="#">Printed Kurti</a></li>
+                                    <li><a href="#">Embroidered Kurti</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Salwar Kameez</a></li>
+                            <li><a href="#">Saree</a></li>
+                            <li><a href="#">Abaya</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Attar <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Arabic Attar</a></li>
+                            <li><a href="#">Indian Attar</a></li>
+                            <li><a href="#">Floral Attar</a></li>
+                            <li><a href="#">Woody Attar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Perfumes <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Men Perfumes <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Woody</a></li>
+                                    <li><a href="#">Fresh</a></li>
+                                    <li><a href="#">Oriental</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Women Perfumes</a></li>
+                            <li><a href="#">Unisex Perfumes</a></li>
+                            <li><a href="#">Body Spray</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Gadgets <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Headphones</a></li>
+                            <li><a href="#">Speakers</a></li>
+                            <li><a href="#">Chargers</a></li>
+                            <li><a href="#">Smart Watches</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Watch</a>
+                    </li>
+                </ul>
+                <a href="tel:09638090000" class="hotline">
+                    <i class="fas fa-phone-alt"></i>
+                    <div class="hotline-text">
+                        <span class="hotline-label">Hotline:</span>
+                        <span class="hotline-number">09638090000</span>
+                    </div>
+                </a>
+            </div>
+            <div class="desktop-nav-container sub-nav">
+                <ul class="nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Sneakers <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Running</a></li>
+                            <li><a href="#">Casual</a></li>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Premium</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Waistcoat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Honey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Tupi</a>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Combo Offers <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Family Pack</a></li>
+                            <li><a href="#">Gift Set</a></li>
+                            <li><a href="#">Bundle Deal</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown flash-sale">
+                        <a href="#">FLASH SALE - 26 <span class="fire-emoji">🔥🔥</span> <i
+                                class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">50% Off</a></li>
+                            <li><a href="#">Buy 1 Get 1</a></li>
+                            <li><a href="#">Clearance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Sticky Header (appears on scroll) -->
+    <div class="sticky-header" id="stickyHeader">
+        <!-- Sticky Top Bar -->
+        <div class="sticky-top-bar">
+            <div class="sticky-top-bar-container">
+                <a href="#" class="store-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>STORE LOCATIONS</span>
+                </a>
+                <div class="settings-dropdown">
+                    <button class="settings-btn">
+                        <span>Settings</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="settings-menu">
+                        <li><a href="#"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+                        <li><a href="#"><i class="fas fa-user-plus"></i> Register</a></li>
+                        <li><a href="#"><i class="fas fa-truck"></i> Track Order</a></li>
+                        <li><a href="#"><i class="fas fa-headset"></i> Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Sticky Main Header -->
+        <div class="sticky-header-container">
+            <button class="mobile-menu-toggle sticky-menu-toggle" id="stickyMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="sticky-logo">
+                <a href="#">
+                    <img src="logo.png" alt="Believers Logo">
+                </a>
+            </div>
+            <nav class="sticky-nav">
+                <ul class="sticky-nav-list">
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Panjabi <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Regular Panjabi <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Cotton Panjabi</a></li>
+                                    <li><a href="#">Linen Panjabi</a></li>
+                                    <li><a href="#">Silk Panjabi</a></li>
+                                </ul>
+                            </li>
+                            <li class="has-submenu">
+                                <a href="#">Embroidered Panjabi <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Hand Embroidered</a></li>
+                                    <li><a href="#">Machine Embroidered</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Printed Panjabi</a></li>
+                            <li><a href="#">Premium Panjabi</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Thobe <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Classic Thobe <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">White Thobe</a></li>
+                                    <li><a href="#">Black Thobe</a></li>
+                                    <li><a href="#">Navy Thobe</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Modern Thobe</a></li>
+                            <li><a href="#">Embroidered Thobe</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Shirt <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Formal Shirt <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Solid Color</a></li>
+                                    <li><a href="#">Striped</a></li>
+                                    <li><a href="#">Checked</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Casual Shirt</a></li>
+                            <li><a href="#">Printed Shirt</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">T-shirt <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Polo T-shirt</a></li>
+                            <li class="has-submenu">
+                                <a href="#">Round Neck <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Plain</a></li>
+                                    <li><a href="#">Graphic</a></li>
+                                    <li><a href="#">Printed</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">V-Neck</a></li>
+                            <li><a href="#">Oversized</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Polo Shirt <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Classic Polo</a></li>
+                            <li><a href="#">Premium Polo</a></li>
+                            <li><a href="#">Striped Polo</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Pant & Trouser <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Formal Trouser <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Slim Fit</a></li>
+                                    <li><a href="#">Regular Fit</a></li>
+                                    <li><a href="#">Classic Fit</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Chino Pant</a></li>
+                            <li><a href="#">Slim Fit</a></li>
+                            <li><a href="#">Regular Fit</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Women's <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Kurti <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Casual Kurti</a></li>
+                                    <li><a href="#">Printed Kurti</a></li>
+                                    <li><a href="#">Embroidered Kurti</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Salwar Kameez</a></li>
+                            <li><a href="#">Saree</a></li>
+                            <li><a href="#">Abaya</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Attar <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Arabic Attar</a></li>
+                            <li><a href="#">Indian Attar</a></li>
+                            <li><a href="#">Floral Attar</a></li>
+                            <li><a href="#">Woody Attar</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Perfumes <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li class="has-submenu">
+                                <a href="#">Men Perfumes <i class="fas fa-chevron-right"></i></a>
+                                <ul class="sub-submenu">
+                                    <li><a href="#">Woody</a></li>
+                                    <li><a href="#">Fresh</a></li>
+                                    <li><a href="#">Oriental</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Women Perfumes</a></li>
+                            <li><a href="#">Unisex Perfumes</a></li>
+                            <li><a href="#">Body Spray</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item has-dropdown">
+                        <a href="#">Gadgets <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="#">Headphones</a></li>
+                            <li><a href="#">Speakers</a></li>
+                            <li><a href="#">Chargers</a></li>
+                            <li><a href="#">Smart Watches</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Watch</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sticky-actions">
+                <a href="#" class="sticky-cart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+    <!-- Mobile Navigation -->
+    <nav class="main-nav" id="mainNav">
+        <div class="mobile-nav-header">
+            <div class="mobile-nav-logo">
+                <a href="#">
+                    <img src="logo.png" alt="Believers Logo">
+                </a>
+            </div>
+            <button class="mobile-nav-close" id="mobileNavClose">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav-list">
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Panjabi <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Regular Panjabi</a></li>
+                    <li><a href="#">Embroidered Panjabi</a></li>
+                    <li><a href="#">Printed Panjabi</a></li>
+                    <li><a href="#">Premium Panjabi</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Thobe <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Classic Thobe</a></li>
+                    <li><a href="#">Modern Thobe</a></li>
+                    <li><a href="#">Embroidered Thobe</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Shirt <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Formal Shirt</a></li>
+                    <li><a href="#">Casual Shirt</a></li>
+                    <li><a href="#">Printed Shirt</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">T-shirt <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Polo T-shirt</a></li>
+                    <li><a href="#">Round Neck</a></li>
+                    <li><a href="#">V-Neck</a></li>
+                    <li><a href="#">Oversized</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Polo Shirt <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Classic Polo</a></li>
+                    <li><a href="#">Premium Polo</a></li>
+                    <li><a href="#">Striped Polo</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Pant & Trouser <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Formal Trouser</a></li>
+                    <li><a href="#">Chino Pant</a></li>
+                    <li><a href="#">Slim Fit</a></li>
+                    <li><a href="#">Regular Fit</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Women's Clothing <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Kurti</a></li>
+                    <li><a href="#">Salwar Kameez</a></li>
+                    <li><a href="#">Saree</a></li>
+                    <li><a href="#">Abaya</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Attar <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Arabic Attar</a></li>
+                    <li><a href="#">Indian Attar</a></li>
+                    <li><a href="#">Floral Attar</a></li>
+                    <li><a href="#">Woody Attar</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Perfumes <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Men Perfumes</a></li>
+                    <li><a href="#">Women Perfumes</a></li>
+                    <li><a href="#">Unisex Perfumes</a></li>
+                    <li><a href="#">Body Spray</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Gadgets <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Headphones</a></li>
+                    <li><a href="#">Speakers</a></li>
+                    <li><a href="#">Chargers</a></li>
+                    <li><a href="#">Smart Watches</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#">Watch</a>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Sneakers <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Running</a></li>
+                    <li><a href="#">Casual</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Premium</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#">Waistcoat</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#">Honey</a>
+            </li>
+            <li class="mobile-nav-item">
+                <a href="#">Tupi</a>
+            </li>
+            <li class="mobile-nav-item has-dropdown">
+                <a href="#">Combo Offers <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">Family Pack</a></li>
+                    <li><a href="#">Gift Set</a></li>
+                    <li><a href="#">Bundle Deal</a></li>
+                </ul>
+            </li>
+            <li class="mobile-nav-item has-dropdown flash-sale">
+                <a href="#">FLASH SALE - 26 🔥🔥 <i class="fas fa-chevron-down"></i></a>
+                <ul class="mobile-submenu">
+                    <li><a href="#">50% Off</a></li>
+                    <li><a href="#">Buy 1 Get 1</a></li>
+                    <li><a href="#">Clearance</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Shop Page Content -->
+    <main class="shop-page">
+        <!-- Breadcrumb -->
+        <div class="breadcrumb">
+            <div class="breadcrumb-container">
+                <a href="#"><i class="fas fa-home"></i> Home</a>
+                <span class="separator">&gt;&gt;</span>
+                <a href="#">Category</a>
+                <span class="separator">&gt;&gt;</span>
+                <span class="current">Sports Jersey</span>
+            </div>
+        </div>
+
+        <!-- Shop Content -->
+        <div class="shop-container">
+            <!-- Sidebar -->
+            <aside class="shop-sidebar">
+                <!-- Categories -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">Categories</h3>
+                    <ul class="category-list">
+                        <li><a href="#"><span class="bullet"></span> Panjabi</a></li>
+                        <li><a href="#"><span class="bullet"></span> Thobe</a></li>
+                        <li><a href="#"><span class="bullet"></span> Shirt</a></li>
+                        <li><a href="#"><span class="bullet"></span> T-shirt</a></li>
+                        <li><a href="#"><span class="bullet"></span> Polo Shirt</a></li>
+                        <li><a href="#"><span class="bullet"></span> Pant & Trouser</a></li>
+                        <li><a href="#"><span class="bullet"></span> Women's Clothing</a></li>
+                        <li><a href="#"><span class="bullet"></span> Attar</a></li>
+                    </ul>
+                </div>
+
+                <!-- New Products -->
+                <div class="sidebar-section">
+                    <h3 class="sidebar-title">New Products</h3>
+                    <div class="new-products-list">
+                        <a href="#" class="new-product-item">
+                            <div class="new-product-thumb">
+                                <img src="assets/img/shop/product_hover-758-20260202110106.jpg" alt="Soft Arabian Thobe">
+                            </div>
+                            <div class="new-product-info">
+                                <span class="new-product-name">Soft Arabian Thobe - 26</span>
+                                <span class="new-product-price">2100&#2547;</span>
+                            </div>
+                        </a>
+                        <a href="#" class="new-product-item">
+                            <div class="new-product-thumb">
+                                <img src="assets/img/shop/product_hover-760-20260202111851.jpg" alt="Chaineot Trouser">
+                            </div>
+                            <div class="new-product-info">
+                                <span class="new-product-name">Chaineot Trouser - Midnight Navy</span>
+                                <span class="new-product-price">765&#2547;</span>
+                            </div>
+                        </a>
+                        <a href="#" class="new-product-item">
+                            <div class="new-product-thumb">
+                                <img src="assets/img/shop/product_hover-761-20260202112425.jpg" alt="Chaineot Trouser">
+                            </div>
+                            <div class="new-product-info">
+                                <span class="new-product-name">Chaineot Trouser - Charcoal</span>
+                                <span class="new-product-price">765&#2547;</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Products Grid -->
+            <div class="shop-products">
+                <div class="products-grid">
+                    <!-- Product 1 - Out of Stock -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge out-of-stock">Out Of Stock</span>
+                            <img src="assets/img/shop/product_hover-733-20260202085927.jpg" alt="Sports Jersey - Believers (08)">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="#">Sports Jersey - Believers (08)</a></h3>
+                            <div class="product-price">
+                                <del>590&#2547;</del>
+                                <ins>472&#2547;</ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 - 20% Off -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">20%</span>
+                            <img src="assets/img/shop/product_hover-735-20260202091042.jpg" alt="Sports Jersey - Believers (07)">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="#">Sports Jersey - Believers (07)</a></h3>
+                            <div class="product-price">
+                                <del>590&#2547;</del>
+                                <ins>472&#2547;</ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 - 20% Off -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">20%</span>
+                            <img src="assets/img/shop/product_hover-736-20260202091419.jpg" alt="Sports Jersey - White & Ash">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="#">Sports Jersey - White & Ash</a></h3>
+                            <div class="product-price">
+                                <del>590&#2547;</del>
+                                <ins>472&#2547;</ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 - 20% Off -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">20%</span>
+                            <img src="assets/img/shop/product_hover-738-20260202092750.jpg" alt="Sports Jersey - Unstoppable">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="#">Sports Jersey - Unstoppable</a></h3>
+                            <div class="product-price">
+                                <del>590&#2547;</del>
+                                <ins>472&#2547;</ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 - 20% Off -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">20%</span>
+                            <img src="assets/img/shop/product_hover-745-20260202100719.jpg" alt="Sports Jersey - Sabr">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="#">Sports Jersey - Sabr</a></h3>
+                            <div class="product-price">
+                                <del>590&#2547;</del>
+                                <ins>472&#2547;</ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 6 - 20% Off -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">20%</span>
+                            <img src="assets/img/shop/product_hover-746-20260202101542.jpg" alt="Sports Jersey - Revolution">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="#">Sports Jersey - Revolution</a></h3>
+                            <div class="product-price">
+                                <del>590&#2547;</del>
+                                <ins>472&#2547;</ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 7 - Out of Stock -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge out-of-stock">Out Of Stock</span>
+                            <img src="assets/img/shop/product_hover-747-20260202101906.jpg" alt="Sports Jersey - Patience">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="#">Sports Jersey - Patience</a></h3>
+                            <div class="product-price">
+                                <del>590&#2547;</del>
+                                <ins>472&#2547;</ins>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 8 - 20% Off -->
+                    <div class="product-card">
+                        <div class="product-image">
+                            <span class="product-badge">20%</span>
+                            <img src="assets/img/shop/product_hover-748-20260202103150.jpg" alt="Sports Jersey - Palestine">
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-title"><a href="#">Sports Jersey - Palestine</a></h3>
+                            <div class="product-price">
+                                <del>590&#2547;</del>
+                                <ins>472&#2547;</ins>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <!-- Column 1: Brand -->
+                <div class="footer-col footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="logo.png" alt="Believers Logo">
+                    </a>
+                    <p class="footer-tagline">One of the largest Islamic Lifestyle brands in Bangladesh</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon social-facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon social-youtube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Account -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Account</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Track My Order</a></li>
+                        <li><a href="#">Join As Affiliate</a></li>
+                        <li><a href="#">Complain Box</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Information -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Information</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Our Showrooms</a></li>
+                        <li><a href="#">Refund & Returned</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Talk To Us -->
+                <div class="footer-col">
+                    <h4 class="footer-heading">Talk To Us</h4>
+                    <p class="footer-subtitle">Got Questions? Call us</p>
+                    <a href="tel:09638090000" class="footer-phone">09638090000</a>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> cc.believerssign@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Shop-3/1, Eastern Plaza, Hatirpool, Dhaka, Dhaka,
+                            Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Believers. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
