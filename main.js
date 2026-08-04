@@ -123,4 +123,61 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+
+    // Product Detail Page - Tabs
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabPanes = document.querySelectorAll('.tab-pane');
+
+    tabBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+
+            tabBtns.forEach(function(b) { b.classList.remove('active'); });
+            tabPanes.forEach(function(p) { p.classList.remove('active'); });
+
+            this.classList.add('active');
+            document.getElementById(targetTab).classList.add('active');
+        });
+    });
+
+    // Product Detail Page - Size Selection
+    const sizeBtns = document.querySelectorAll('.size-btn');
+    sizeBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            sizeBtns.forEach(function(b) { b.classList.remove('active'); });
+            this.classList.add('active');
+        });
+    });
+
+    // Product Detail Page - Quantity Selector
+    const qtyMinus = document.querySelector('.qty-btn.minus');
+    const qtyPlus = document.querySelector('.qty-btn.plus');
+    const qtyInput = document.querySelector('.qty-input');
+
+    if (qtyMinus && qtyPlus && qtyInput) {
+        qtyMinus.addEventListener('click', function() {
+            let val = parseInt(qtyInput.value);
+            if (val > 1) qtyInput.value = val - 1;
+        });
+
+        qtyPlus.addEventListener('click', function() {
+            let val = parseInt(qtyInput.value);
+            if (val < 10) qtyInput.value = val + 1;
+        });
+    }
+
+    // Product Detail Page - Thumbnail Gallery
+    const thumbItems = document.querySelectorAll('.thumb-item');
+    const mainImage = document.getElementById('mainProductImage');
+
+    thumbItems.forEach(function(thumb) {
+        thumb.addEventListener('click', function() {
+            thumbItems.forEach(function(t) { t.classList.remove('active'); });
+            this.classList.add('active');
+            const imgSrc = this.querySelector('img').getAttribute('src');
+            if (mainImage) {
+                mainImage.setAttribute('src', imgSrc);
+            }
+        });
+    });
 });

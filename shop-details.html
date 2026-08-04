@@ -607,194 +607,114 @@
         </ul>
     </nav>
 
-    <!-- Shop Page Content -->
-    <main class="shop-page">
-        <!-- Breadcrumb -->
-        <div class="breadcrumb">
-            <div class="breadcrumb-container">
-                <a href="#"><i class="fas fa-home"></i> Home</a>
-                <span class="separator">&gt;&gt;</span>
-                <a href="#">Category</a>
-                <span class="separator">&gt;&gt;</span>
-                <span class="current">Sports Jersey</span>
+    <!-- Product Detail Section -->
+    <main class="product-detail-page">
+        <div class="product-detail-container">
+            <!-- Product Images -->
+            <div class="product-gallery">
+                <div class="gallery-thumbnails">
+                    <div class="thumb-item active">
+                        <img src="assets/img/shop/product_hover-745-20260202100719.jpg" alt="Thumbnail 1">
+                    </div>
+                    <div class="thumb-item">
+                        <img src="assets/img/shop/product_hover-746-20260202101542.jpg" alt="Thumbnail 2">
+                    </div>
+                    <div class="thumb-item">
+                        <img src="assets/img/shop/product_hover-747-20260202101906.jpg" alt="Thumbnail 3">
+                    </div>
+                </div>
+                <div class="gallery-main">
+                    <img src="assets/img/shop/product_hover-745-20260202100719.jpg" alt="Lacoste Polo - Olive" id="mainProductImage">
+                    <button class="zoom-btn"><i class="fas fa-expand"></i></button>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-detail-info">
+                <h1 class="product-detail-title">Lacoste Polo - Olive</h1>
+                <span class="stock-status in-stock">In Stock</span>
+                <div class="product-detail-price">
+                    <del>790&#2547;</del>
+                    <ins>632&#2547;</ins>
+                </div>
+
+                <div class="product-options">
+                    <label class="option-label">Select Size:</label>
+                    <div class="size-options">
+                        <button class="size-btn">M</button>
+                        <button class="size-btn">L</button>
+                        <button class="size-btn active">XL</button>
+                        <button class="size-btn">XXL</button>
+                    </div>
+                </div>
+
+                <div class="product-brand">
+                    <span class="brand-label">Brand:</span>
+                    <span class="brand-name">Believers</span>
+                </div>
+
+                <div class="product-quantity-section">
+                    <label class="option-label">Quantity</label>
+                    <div class="quantity-row">
+                        <div class="quantity-selector">
+                            <button class="qty-btn minus"><i class="fas fa-minus"></i></button>
+                            <input type="number" value="1" min="1" max="10" class="qty-input">
+                            <button class="qty-btn plus"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <button class="btn-add-to-cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <button class="btn-buy-now">Buy Now</button>
             </div>
         </div>
 
-        <!-- Shop Content -->
-        <div class="shop-container">
-            <!-- Sidebar -->
-            <aside class="shop-sidebar">
-                <!-- Categories -->
-                <div class="sidebar-section">
-                    <h3 class="sidebar-title">Categories</h3>
-                    <ul class="category-list">
-                        <li><a href="#"><span class="bullet"></span> Panjabi</a></li>
-                        <li><a href="#"><span class="bullet"></span> Thobe</a></li>
-                        <li><a href="#"><span class="bullet"></span> Shirt</a></li>
-                        <li><a href="#"><span class="bullet"></span> T-shirt</a></li>
-                        <li><a href="#"><span class="bullet"></span> Polo Shirt</a></li>
-                        <li><a href="#"><span class="bullet"></span> Pant & Trouser</a></li>
-                        <li><a href="#"><span class="bullet"></span> Women's Clothing</a></li>
-                        <li><a href="#"><span class="bullet"></span> Attar</a></li>
-                    </ul>
+        <!-- Product Tabs -->
+        <div class="product-tabs-section">
+            <div class="tabs-container">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="description">Description</button>
+                    <button class="tab-btn" data-tab="additional-info">Additional information</button>
                 </div>
-
-                <!-- New Products -->
-                <div class="sidebar-section">
-                    <h3 class="sidebar-title">New Products</h3>
-                    <div class="new-products-list">
-                        <a href="#" class="new-product-item">
-                            <div class="new-product-thumb">
-                                <img src="assets/img/shop/product_hover-758-20260202110106.jpg" alt="Soft Arabian Thobe">
-                            </div>
-                            <div class="new-product-info">
-                                <span class="new-product-name">Soft Arabian Thobe - 26</span>
-                                <span class="new-product-price">2100&#2547;</span>
-                            </div>
-                        </a>
-                        <a href="#" class="new-product-item">
-                            <div class="new-product-thumb">
-                                <img src="assets/img/shop/product_hover-760-20260202111851.jpg" alt="Chaineot Trouser">
-                            </div>
-                            <div class="new-product-info">
-                                <span class="new-product-name">Chaineot Trouser - Midnight Navy</span>
-                                <span class="new-product-price">765&#2547;</span>
-                            </div>
-                        </a>
-                        <a href="#" class="new-product-item">
-                            <div class="new-product-thumb">
-                                <img src="assets/img/shop/product_hover-761-20260202112425.jpg" alt="Chaineot Trouser">
-                            </div>
-                            <div class="new-product-info">
-                                <span class="new-product-name">Chaineot Trouser - Charcoal</span>
-                                <span class="new-product-price">765&#2547;</span>
-                            </div>
-                        </a>
+                <div class="tabs-content">
+                    <!-- Description Tab -->
+                    <div class="tab-pane active" id="description">
+                        <p>Introducing the Lacoste Polo - Olive, a perfect blend of comfort and style for the modern man. This premium polo shirt is crafted from high-quality cotton fabric that ensures breathability and all-day comfort.</p>
+                        <p>Featuring a classic polo collar with a two-button placket, this olive green polo is versatile enough for both casual outings and semi-formal occasions. The embroidered logo on the chest adds a touch of sophistication.</p>
+                        <ul class="description-list">
+                            <li>Premium cotton fabric for ultimate comfort</li>
+                            <li>Classic polo collar with two-button placket</li>
+                            <li>Embroidered logo on chest</li>
+                            <li>Ribbed cuffs for a secure fit</li>
+                            <li>Machine washable</li>
+                        </ul>
                     </div>
-                </div>
-            </aside>
-
-            <!-- Products Grid -->
-            <div class="shop-products">
-                <div class="products-grid">
-                    <!-- Product 1 - Out of Stock -->
-                    <div class="product-card out-of-stock-card">
-                        <div class="product-image">
-                            <span class="product-badge out-of-stock">Out Of Stock</span>
-                            <img src="assets/img/shop/product_hover-733-20260202085927.jpg" alt="Sports Jersey - Believers (08)">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title"><a href="#">Sports Jersey - Believers (08)</a></h3>
-                            <div class="product-price">
-                                <del>590&#2547;</del>
-                                <ins>472&#2547;</ins>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 2 - 20% Off -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="product-badge">20%</span>
-                            <img src="assets/img/shop/product_hover-735-20260202091042.jpg" alt="Sports Jersey - Believers (07)">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title"><a href="#">Sports Jersey - Believers (07)</a></h3>
-                            <div class="product-price">
-                                <del>590&#2547;</del>
-                                <ins>472&#2547;</ins>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 3 - 20% Off -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="product-badge">20%</span>
-                            <img src="assets/img/shop/product_hover-736-20260202091419.jpg" alt="Sports Jersey - White & Ash">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title"><a href="#">Sports Jersey - White & Ash</a></h3>
-                            <div class="product-price">
-                                <del>590&#2547;</del>
-                                <ins>472&#2547;</ins>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 4 - 20% Off -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="product-badge">20%</span>
-                            <img src="assets/img/shop/product_hover-738-20260202092750.jpg" alt="Sports Jersey - Unstoppable">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title"><a href="#">Sports Jersey - Unstoppable</a></h3>
-                            <div class="product-price">
-                                <del>590&#2547;</del>
-                                <ins>472&#2547;</ins>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 5 - 20% Off -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="product-badge">20%</span>
-                            <img src="assets/img/shop/product_hover-745-20260202100719.jpg" alt="Sports Jersey - Sabr">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title"><a href="#">Sports Jersey - Sabr</a></h3>
-                            <div class="product-price">
-                                <del>590&#2547;</del>
-                                <ins>472&#2547;</ins>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 6 - 20% Off -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="product-badge">20%</span>
-                            <img src="assets/img/shop/product_hover-746-20260202101542.jpg" alt="Sports Jersey - Revolution">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title"><a href="#">Sports Jersey - Revolution</a></h3>
-                            <div class="product-price">
-                                <del>590&#2547;</del>
-                                <ins>472&#2547;</ins>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 7 - Out of Stock -->
-                    <div class="product-card out-of-stock-card">
-                        <div class="product-image">
-                            <span class="product-badge out-of-stock">Out Of Stock</span>
-                            <img src="assets/img/shop/product_hover-747-20260202101906.jpg" alt="Sports Jersey - Patience">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title"><a href="#">Sports Jersey - Patience</a></h3>
-                            <div class="product-price">
-                                <del>590&#2547;</del>
-                                <ins>472&#2547;</ins>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Product 8 - 20% Off -->
-                    <div class="product-card">
-                        <div class="product-image">
-                            <span class="product-badge">20%</span>
-                            <img src="assets/img/shop/product_hover-748-20260202103150.jpg" alt="Sports Jersey - Palestine">
-                        </div>
-                        <div class="product-info">
-                            <h3 class="product-title"><a href="#">Sports Jersey - Palestine</a></h3>
-                            <div class="product-price">
-                                <del>590&#2547;</del>
-                                <ins>472&#2547;</ins>
-                            </div>
-                        </div>
+                    <!-- Additional Information Tab -->
+                    <div class="tab-pane" id="additional-info">
+                        <table class="additional-info-table">
+                            <tbody>
+                                <tr>
+                                    <th>Color</th>
+                                    <td>Olive</td>
+                                </tr>
+                                <tr>
+                                    <th>Size</th>
+                                    <td>M, L, XL, XXL</td>
+                                </tr>
+                                <tr>
+                                    <th>Material</th>
+                                    <td>100% Cotton</td>
+                                </tr>
+                                <tr>
+                                    <th>Weight</th>
+                                    <td>250g</td>
+                                </tr>
+                                <tr>
+                                    <th>Care Instructions</th>
+                                    <td>Machine wash cold, Tumble dry low</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
